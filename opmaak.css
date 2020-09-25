@@ -1,0 +1,23 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  color: khaki;
+  background: darkolivegreen url("https://media1.tenor.com/images/ddbccda2fe501c113eecfc5b304a0f59/tenor.gif?itemid=13382883") repeat;
+}
+
+header {
+  background: url(Header_Panda.png);
+  width: 960px;
+  height: 150px;
+}
+
+header h1 {
+  font-size: 300%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: black;
+  text-align: right;
+  text-shadow: 5px 5px 7px #000000;
+}
