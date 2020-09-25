@@ -4,20 +4,65 @@
 }
 
 body {
-  color: khaki;
-  background: darkolivegreen url("https://media1.tenor.com/images/ddbccda2fe501c113eecfc5b304a0f59/tenor.gif?itemid=13382883") repeat;
+  background: #40916C;
 }
 
-header {
+/* header {
   background: url(Header_Panda.png);
   width: 960px;
   height: 150px;
-}
+} */
 
 header h1 {
   font-size: 300%;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: black;
+  /* background: white; */
   text-align: right;
   text-shadow: 5px 5px 7px #000000;
+}
+
+ul {
+  background: #40916C;
+  padding: 10px;
+}
+
+ul li {
+  background: #52B788;
+  padding: 5px;
+  border: solid 2px #D8F3DC;
+  display: inline-block;
+}
+
+ul li a {
+  color: #D8F3DC;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: #1B4332;
+}
+
+section {
+  padding: 5px;
+  margin: 5px;
+  border: double 4px black;
+}
+
+section article {
+  border: 3px solid black;
+  border-radius: 0px 20px 20px 20px;
+  margin: 5px 10px 5px 10px;
+  padding: 10px;
+  background: #b7e4c7;
+}
+
+footer {
+  background: #b7e4c7;
+}
+
+footer h3 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 90%;
 }
