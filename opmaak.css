@@ -13,13 +13,14 @@ body {
   height: 150px;
 } */
 
+.article_1 #panda {
+  float: right;
+  padding-top: 10px;
+  padding-left: 2%;
+}
+
 header h1 {
-  font-size: 300%;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: black;
-  /* background: white; */
-  text-align: right;
-  text-shadow: 5px 5px 7px #000000;
+  color: #081C15;
 }
 
 ul {
@@ -39,7 +40,7 @@ ul li a {
   text-decoration: none;
 }
 
-ul li a:hover {
+nav a:hover {
   color: #1B4332;
 }
 
@@ -55,6 +56,7 @@ section article {
   margin: 5px 10px 5px 10px;
   padding: 10px;
   background: #b7e4c7;
+  color: #081C15;
 }
 
 footer {
@@ -65,4 +67,9 @@ footer h3 {
   text-align: center;
   font-weight: normal;
   font-size: 90%;
+}
+
+.wrapper {
+  margin: 0 auto 0 auto;
+  width: 100%;
 }
