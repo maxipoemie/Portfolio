@@ -4,7 +4,8 @@
 }
 
 body {
-  background: #40916C;
+  background: #52B788;
+  font-family: 'PT Serif', serif;
 }
 
 /* header {
@@ -17,6 +18,7 @@ body {
   float: right;
   padding-top: 10px;
   padding-left: 2%;
+  /* width: 25%; */
 }
 
 header h1 {
@@ -25,20 +27,49 @@ header h1 {
 
 ul {
   background: #40916C;
-  padding: 10px;
+  /* padding: 10px; */
+  /* margin: -30px; */
+  /* border: solid 2px #D8F3DC; */
+  width: 100%;
 }
 
+/* #home {
+  width: 23%;
+  text-align: center;
+}
+
+#about {
+  width: 23%;
+  text-align: center;
+}
+
+#projects {
+  width: 23%;
+  text-align: center;
+}
+
+#contact {
+  width: 23%;
+  text-align: center;
+} */
+
 ul li {
-  background: #52B788;
+  background: #40916C;
   padding: 5px;
-  border: solid 2px #D8F3DC;
   display: inline-block;
+  /* width: 25%; */
+  width: 23%;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* align-items: center; */
 }
 
 ul li a {
   color: #D8F3DC;
   text-decoration: none;
 }
+
 
 nav a:hover {
   color: #1B4332;
@@ -47,7 +78,7 @@ nav a:hover {
 section {
   padding: 5px;
   margin: 5px;
-  border: double 4px black;
+  /* border: double 4px black; */
 }
 
 section article {
