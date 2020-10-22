@@ -10,6 +10,7 @@ body {
   flex-direction: column; */
 }
 
+
 /* header {
   background: url(Header_Panda.png);
   width: 960px;
@@ -22,11 +23,11 @@ header h1 {
 }
 
 ul {
-  background: #b7e4c7;
+  background: #95D5B2;
   /* padding: 10px; */
   /* margin: -30px; */
   /* border: solid 2px #D8F3DC; */
-  width: 100%;
+  /* width: 100%; */
 }
 
 /* #home {
@@ -49,31 +50,49 @@ ul {
   text-align: center;
 } */
 
+nav {
+  position: sticky;
+  top: 0;
+}
+
+.grid-container-nav {
+  display: grid;
+  grid-template-columns: [home] 1fr [about] 1fr [projects] 1fr [contact] 1fr;
+  grid-template-areas: "home about projects contact"
+
+}
+
+nav .home {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+nav .about {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
 ul li {
-  /* background: #40916C; */
-  /* padding: 5px; */
-  display: inline-block;
-  /* width: 25%; */
+  /* display: inline-block;
   width: 23%;
   text-align: center;
   margin-top: 10px;
-  margin-bottom: 10px;
-  /* align-items: center; */
+  margin-bottom: 10px; */
 }
 
 ul li a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 
 nav a:hover {
-  color: #1B4332;
+  color: black;
 }
 
 section {
-  padding: 5px;
-  margin: 5px;
+  /* padding: 5px;
+  margin: 5px; */
+  text-align: center;
   /* border: double 4px black; */
 }
 
@@ -86,26 +105,39 @@ section article {
   color: black;
 }
 
-.article_1 {
-  text-align: center;
-  padding: 10%;
+section .home {
+  padding: 10vw;
 }
 
-.article_1 #panda {
+section .home #panda {
   /* float: right;
   padding-top: 10px;
   padding-left: 2%; */
-  width: 25%;
-  padding: 10%;
+  width: 10vw;
+  padding-top: 5vw;
+}
+
+section .about {
+  background-color: #95D5B2;
+  color: white;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  padding: 10vw;
+}
+
+section .about .me {
+  /* padding-left: 5vw;
+  padding-right: 5vw; */
 }
 
 footer {
-  background: #b7e4c7;
+  background: #95D5B2;
   /* flex-shrink: 0; */
-  position: fixed;
-  bottom: 0;
+  /* position: fixed; */
+  /* bottom: 0; */
   width: 100%;
   /* left: 0; */
+  align-items: flex-end;
 }
 
 footer h3 {
