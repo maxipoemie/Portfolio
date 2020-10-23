@@ -22,13 +22,13 @@ header h1 {
   color: #081C15;
 }
 
-ul {
-  background: #95D5B2;
+/* ul {
+  background: #95D5B2; */
   /* padding: 10px; */
   /* margin: -30px; */
   /* border: solid 2px #D8F3DC; */
   /* width: 100%; */
-}
+/* } */
 
 /* #home {
   width: 23%;
@@ -50,66 +50,74 @@ ul {
   text-align: center;
 } */
 
-nav {
+/* nav {
+   position: sticky;
+  top: 0;
+} */
+
+.container-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "home about projects contact";
+  background-color: #95D5B2;
+  text-align: center;
   position: sticky;
   top: 0;
-}
-
-.grid-container-nav {
-  display: grid;
-  grid-template-columns: [home] 1fr [about] 1fr [projects] 1fr [contact] 1fr;
-  grid-template-areas: "home about projects contact"
 
 }
 
-nav .home {
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-nav .about {
-  grid-column-start: 2;
-  grid-column-end: 3;
+.nav {
+  color: white;
+  padding: 1em;
 }
 
-ul li {
-  /* display: inline-block;
+/* #nav-home {
+  grid-area: home;
+} */
+
+/* #nav-about {
+  grid-area: about
+} */
+
+/* ul li {
+  display: inline-block;
   width: 23%;
   text-align: center;
   margin-top: 10px;
-  margin-bottom: 10px; */
-}
+  margin-bottom: 10px;
+} */
 
-ul li a {
+/* ul li a {
   color: white;
   text-decoration: none;
-}
+} */
 
 
-nav a:hover {
+.container-nav a:hover {
   color: black;
 }
 
-section {
+.page {
   /* padding: 5px;
-  margin: 5px; */
+  margin: 5px;
+  border: double 4px black; */
   text-align: center;
-  /* border: double 4px black; */
 }
 
-section article {
+/* section article { */
   /* border: 3px solid #52B788; */
   /* border-radius: 20px 20px 20px 20px; */
   /* margin: 5px 10px 5px 10px; */
-  padding: 10px;
   /* background: #b7e4c7; */
+  /* padding: 10px;
   color: black;
-}
+} */
 
-section .home {
+.home {
   padding: 10vw;
 }
 
-section .home #panda {
+.home #panda {
   /* float: right;
   padding-top: 10px;
   padding-left: 2%; */
@@ -117,7 +125,7 @@ section .home #panda {
   padding-top: 5vw;
 }
 
-section .about {
+.about {
   background-color: #95D5B2;
   color: white;
   margin-top: 10%;
@@ -125,10 +133,6 @@ section .about {
   padding: 10vw;
 }
 
-section .about .me {
-  /* padding-left: 5vw;
-  padding-right: 5vw; */
-}
 
 footer {
   background: #95D5B2;
