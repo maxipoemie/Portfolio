@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Max_Bosma</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="opmaak.css">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&display=swap');
     </style>
   </head>
   <body>
@@ -15,21 +17,27 @@
     </header> -->
     <div class="container-nav">
       <!-- <nav> -->
-      <a class="nav" id="nav-home" href="index.html"><p>Home</p></a>
-      <a class="nav" id="nav-about" href="about.html"><p>About</p></a>
-      <a class="nav" id="nav-projects" href="#">Projects</a>
-      <a class="nav" id="nav-contact" href="#">Contact</a>
+      <a class="nav" id="nav-home" href="#"><p>Home</p></a>
+      <a class="nav" id="nav-about" href="#computer"><p>About</p></a>
+      <a class="nav" id="nav-projects" href="#projects">Projects</a>
+      <a class="nav" id="nav-contact" href="#footer">Contact</a>
       <!-- </nav> -->
     </div>
     <div class="page">
       <div class="home">
-        <h2>Student and Wannabe Coder</h2>
-        <p>
-          <img src="Panda.png" alt="Panda" id="panda" >
-        </p>
-      </div> 
+        <div class="home-body">
+          <h1 class="home-title">Student and Wannabe Coder</h1>
+          <h2 class="home-subtitle">I love to code and I try to make the best and most beautiful thing I can.</h2>
+          <p>
+            <img src="Me_v3.jpg" alt="Me" id="me" >
+          </p>
+        </div>
+        <div class="home-footer">
+          <img id="computer" class="computer" src="computer_groen.png" alt="placeholder">
+        </div>
+      </div>
       <div class="about">
-        <h2>Hello, my name is Max.</h2>
+        <h2 id="about">Hello, my name is Max.</h2>
         <div class="me">
           <p>
             Since I got into the "Coderclass" at the Metis Monessori Lyceum, I fell in love with coding and created
@@ -37,9 +45,45 @@
           </p>
         </div>
       </div>
+	  <div class="home-projects" id="projects">
+  		<div class="outlines-projects">
+        <div class="project">
+          <a class="project-link" target="_blank" href="https://dorien2005.github.io/HTML-CSS-02/projecten.html"><h4>Project Zero 1</h4></a>
+          <p>I made a website for an imaginary trip to Londen.</p>
+        </div>
+        <div class="project">
+          <h4>Project Zero 2</h4>
+          <p>I made a website that could be used by Work Out 4 Schools.</p>
+        </div>
+        <div class="project">
+          <h4>Warchild</h4>
+          <p>I made an animation that could be used by Warchild.</p>
+        </div>
+        <div class="project">
+          <h4>Philips Hue</h4>
+          <p>I made a program usable with Philips Hue lamps.</p>
+        </div>
+        <div class="project">
+          <h4>First Lego League</h4>
+          <p>I entered the First Lego League.</p>
+        </div>
+        <div class="project">
+          <h4>Astro Pi Challenge</h4>
+          <p>I made a program that was actually run in space.</p>
+        </div>
+      </div>
     </div>
-    <footer>
-      <h3>Made by Max Bosma</h3>
+    </div>
+    <footer id="footer">
+      <img src="Logo_v2.png" alt="Logo" class="logo">
+      <div class="contact">
+        <a href="mailto:24404@edu.msa.nl" class="fa fa-envelope"></a>
+        <a href="https://twitter.com/bosma_max" target="_blank" class="fa fa-twitter"></a>
+        <a href="https://github.com/maxipoemie" target="_blank" class="fa fa-github"></a>
+      </div>
+      <div class="made_by">
+        <p>Made by Max Bosma</p>
+      </div>
     </footer>
   </div>
   </body>
