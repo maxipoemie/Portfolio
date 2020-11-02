@@ -177,6 +177,8 @@ footer {
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   background: transparent;
   color: white;
 }
@@ -205,6 +207,7 @@ footer {
     font-size: 30px;
     width: 30px;
     height: auto;
+    /* padding-top:  */
     /* margin: 5px 2px; */
 
   }
