@@ -5,6 +5,7 @@
 
 body {
   background: white;
+  color: black;
   font-family: 'PT Serif', serif;
 }
 
@@ -14,19 +15,22 @@ html{
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 .container-nav {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "home about projects contact";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "home about projects badges contact";
   background-color: #95D5B2;
   text-align: center;
   position: sticky;
+  color: transparent;
   top: 0;
 }
 
 .nav {
+  background-color: transparent;
   color: white;
   padding: 1em;
 }
@@ -76,8 +80,8 @@ a {
 }
 
 .computer{
-  width: 80%;
-  margin-bottom: -2rem;
+  width: 400px;
+  margin-bottom: -4rem;
 }
 
 /* @media screen and (min-width: 769px){
@@ -106,6 +110,7 @@ a {
   padding: 30px 15px;
 }
 
+
 .outlines-projects {
   align-items: center;
   display: grid;
@@ -124,6 +129,53 @@ a {
   color: black;
 }
 
+.home-badges{
+  text-align: center;
+  /* background-color: #95D5B2; */
+}
+
+/* @media screen and (max-width: 750px){ */
+
+.outlines-badges{
+  display: grid;
+  /* grid-template-areas: "level_1"
+                      "1" "2" "3" "4"; */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, max-content 1fr 1fr);
+  /* grid-template-rows: max-content 1fr max-content 1fr max-content 1fr ; */
+}
+
+.badges-title{
+  padding: 80px;
+}
+
+.badge-img{
+  width: 150px;
+  padding: 10px;
+  /* height: 187.5px; */
+}
+
+#level-1{
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+#level-2{
+  grid-column: 1 / 3;
+  grid-row: 4;
+}
+#level-3{
+  grid-column: 1 / 3;
+  grid-row: 7;
+}
+#level-4{
+  grid-column: 1 / 3;
+  grid-row: 10;
+}
+#level-5{
+  grid-column: 1 / 3;
+  grid-row: 13;
+}
 
 
 /* .project:last-child{
@@ -177,8 +229,6 @@ footer {
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
   background: transparent;
   color: white;
 }
@@ -216,7 +266,7 @@ footer {
 @media screen and (min-width: 650px){
   .computer{
     width: 600px;
-    margin-bottom: -4rem;
+    /* margin-bottom: -4rem; */
   }
 }
 
@@ -235,6 +285,38 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
+  .badge-img{
+    width: 125px;
+    padding: 8px;
+  }
+  .badge-name{
+    font-size: 90%;
+  }
+  .outlines-badges{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, max-content 1fr);
+  }
+  #level-1{
+    grid-column: 1 / 5;
+    grid-row: 1;
+  }
+
+  #level-2{
+    grid-column: 1 / 5;
+    grid-row: 3;
+  }
+  #level-3{
+    grid-column: 1 / 5;
+    grid-row: 5;
+  }
+  #level-4{
+    grid-column: 1 / 5;
+    grid-row: 7;
+  }
+  #level-5{
+    grid-column: 1 / 5;
+    grid-row: 9;
+  }
 }
 
 @media screen and (min-width: 1200px){
@@ -247,6 +329,13 @@ footer {
   }
   .project {
     padding: 90px 45px
+  }
+  .outlines-badges{
+
+  }
+  .badge-img{
+    width: 150px;
+    padding: 10px;
   }
 }
 
