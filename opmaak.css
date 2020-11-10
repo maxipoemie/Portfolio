@@ -110,6 +110,9 @@ a {
   padding: 30px 15px;
 }
 
+/* .project:hover{
+  background-color: #95D5B2;
+} */
 
 .outlines-projects {
   align-items: center;
@@ -203,8 +206,8 @@ footer {
 
 .contact{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 6vw 30vw;
+  grid-template-columns: 1fr 1fr;
+  padding: 6vw 40vw;
   place-items: center;
   /* padding-right: 30vw; */
 }
@@ -237,10 +240,6 @@ footer {
   background-color: white;
   color:#95D5B2;
 }
-
-.fa-twitter {
-}
-
 
 .made_by {
   padding: 1rem;
