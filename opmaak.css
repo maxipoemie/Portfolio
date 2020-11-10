@@ -78,7 +78,7 @@ a {
   }
 }
 
-.computer{
+#computer{
   width: 400px;
   margin-bottom: -4rem;
 }
@@ -262,7 +262,7 @@ footer {
 }
 
 @media screen and (min-width: 650px){
-  .computer{
+  #computer{
     width: 600px;
     /* margin-bottom: -4rem; */
   }
